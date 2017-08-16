@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tag Mofokeng - UI / UX Designer</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700,900" rel="stylesheet">
+<link href="CSS/style.css" rel="stylesheet">
+<link href="CSS/clouds.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="favicon/android-icon-144x144.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="music"> 
+  <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+	  $(".diss").show();
+	  $(".diss2").hide();
+	  $(".play").animate({opacity: '0.1'});
+	   $(".play").prop('disabled', true);
+	  $(".pause").prop('disabled', false);
+	   $(".pause").animate({opacity: '1'});
+	  $(".pause").css({"z-index": "3"});	  	
+                 }	   
+	    function stop(){
+       var audio = document.getElementById("audio");
+       audio.pause();
+			 $(".diss").hide();
+	  $(".diss2").show();
+			$(".pause").prop('disabled', true);
+			$(".play").prop('disabled', false);
+			$(".play").animate({opacity: '1'});
+			$(".pause").animate({opacity: '0.1'});
+			
+    		
+                 }
+   </script> 
+  <img class="play" src="IMG/play_btn.png" width="70" value="PLAY"  onclick="play()">
+  <div class="diss"></div>
+  <img class="pause" src="IMG/pause_btn.png" width="80" value="STOP"  onclick="stop()">
+  <div class="diss2"></div>
+  <audio autoplay loop id="audio" src="Music/hello_world.mp3" ></audio>
+  <script>
+  var audio = document.getElementById("audio");
+  audio.volume = 0.1;
+</script> 
+</div>
+<div id="top"></div>
+<div id="overlay" class="container"></div>
+<div class="mobi_menu">Stay creative and stay inspired!</div>
+<div class="container">
+  <div class="menu container">
+    <ul class="menu_items animated shake">
+      <li><a href="#career_growth">My Career Journey</a></li>
+      <li><a href="#tools">Tools I use</a></li>
+      <li><a href="#work_done">Work I have done</a></li>
+      <li><a href="#contacts">Contact Me</a></li>
+		<li><a target="_blank" href="https://www.linkedin.com/in/tag-mofokeng-071b9a43/"><img src="IMG/Uiconstock-Socialmedia-Linkedin.ico" width="10%"/></a></li>
+    </ul>
+  </div>
+  <div class="propic animated bounceIn"><img src="IMG/propic.png"/></div>
+  <h1 class="main_title">Tag Mofokeng</h1>
+  <h1 class="thin_titlw">UI / UX Designer</h1>
+  <a href="#career_growth">
+  <div class="exp"><strong>6</strong> Years Experience</div>
+  </a>
+  <div class="content">
+    <div id="clouds">
+      <div class="cloud x1"></div>
+      <!-- Time for multiple clouds to dance around -->
+      <div class="cloud x2"></div>
+      <div class="cloud x3"></div>
+      <div class="cloud x4"></div>
+      <div class="cloud x5"></div>
+    </div>
+    <h2>Hello world,</h2>
+    <p   class="animated bounceInLeft" style="width: 80%; margin: auto; text-align: center">Welcome to my world :)</p>
+    
+    <!-- <img id="welcome" src="IMG/welcome_quote_img.jpg" width="100%"/>--> 
+   
+    <div id="welcome">
+      <img  style="width: 90%; margin: auto; position: absolute; overflow: hidden" class="animated zoomIn" src="IMG/recent_work_slide_app_design.png" width="100%"/>
+    <img  src="IMG/recent_work_slide.jpg" width="100%"/>
+	  </div>
+    <div class="skill_cover container "> <img class="float_bg" src="IMG/skill_top.png" width="100%"/>
+      <h1 id="showskill" style="cursor: pointer">What skills do i have?</h1>
+      <br/>
+      <div class="skill animated rotateIn col-md-4">
+        <div class="skill_bar container " id="graphic_design">
+          <div class="skill_bar_cut" id="very_good">
+            <div class="skill_title">
+              <h1>Graphic Design</h1>
+            </div>
+          </div>
+        </div>
+        <div class="rate">Very Good</div>
+      </div>
+      <div class="skill animated rotateIn col-md-4">
+        <div class="skill_bar container " id="html">
+          <div class="skill_bar_cut" id="very_good">
+            <div class="skill_title">
+              <h1>HTML</h1>
+            </div>
+          </div>
+        </div>
+        <div class="rate">Very Good</div>
+      </div>
+      <div class="animated rotateIn skill col-md-4">
+        <div class="skill_bar container " id="css">
+          <div class="skill_bar_cut" id="very_good">
+            <div class="skill_title">
+              <h1>CSS</h1>
+            </div>
+          </div>
+        </div>
+        <div class="rate">Very Good</div>
+      </div>
+      <div class="animated rotateIn skill col-md-4">
+        <div class="skill_bar container " id="javascript">
+          <div class="skill_bar_cut" id="good">
+            <div class="skill_title">
+              <h1>Javascript</h1>
+            </div>
+          </div>
+        </div>
+        <div class="rate">Good</div>
+      </div>
+      <div class="animated rotateIn skill col-md-4">
+        <div class="skill_bar container " id="ui">
+          <div class="skill_bar_cut" id="pretty_good">
+            <div class="skill_title">
+              <h1>UI</h1>
+            </div>
+          </div>
+        </div>
+        <div class="rate">Pretty Good</div>
+      </div>
+      <div class="animated rotateIn skill col-md-4">
+        <div class="skill_bar container " id="ux">
+          <div class="skill_bar_cut" id="fair">
+            <div class="skill_title">
+              <h1>UX</h1>
+            </div>
+          </div>
+        </div>
+        <div id="career_growth" class="rate">Fair</div>
+      </div>
+    </div>
+    <img class="float_bg" src="IMG/journey_top.jpg" width="100%"/>
+    <h1 >How have I been doing in the industry?</h1>
+    <div class="career col-md-2"> <img src="IMG/graduation.jpg" width="150"/>
+      <h3>National Diploma - IT Multimedia</h3>
+      <h4>Tshwane University of Technology</h4>
+    </div>
+    <div class="career col-md-2"> <img src="IMG/graduation.jpg" width="150"/>
+      <h3>Certificate - User Experience Design</h3>
+      <h4>University of Capetown</h4>
+    </div>
+    <div class="career col-md-2"> <img src="IMG/jnr_web_developer.png" width="150"/>
+      <h3>Junior Web Developer</h3>
+      <h4>Ericsson</h4>
+    </div>
+    <div class="career col-md-2"> <img src="IMG/lead_designer.png" width="150"/>
+      <h3>Lead Graphics Designer</h3>
+      <h4>OneConnect Technologies</h4>
+    </div>
+    <div class="career col-md-2"> <img src="IMG/it_manager.png" width="150"/>
+      <h3>IT Manager</h3>
+      <h4>Two Mountains Holdings</h4>
+    </div>
+    <div class="career col-md-2"> <img src="IMG/UI_designer.png" width="150"/>
+      <h3>UI Designer</h3>
+      <h4>SYSPRO</h4>
+    </div>
+    <img id="work_done" class="float_bg" src='IMG/what_i_do_top.jpg' width="100%"/>
+    <div  class="cat webs col-md-6">
+      <h1>Websites and Landing pages</h1>
+      <div class="button_go"></div>
+    </div>
+    <div class="cat apps col-md-6">
+      <h1>Web and Mobile Apps</h1>
+      <div class="button_go"></div>
+    </div>
+    <div class="cat logos col-md-6">
+      <h1>Logo and Poster designs</h1>
+      <div class="button_go"></div>
+    </div>
+    <div class="cat cib col-md-6">
+      <h1>Corporate Branding and Others</h1>
+      <div class="button_go"></div>
+    </div>
+    <div class=" know_bank code_lang col-md-6">
+      <h1>What have I been exposed to?</h1>
+      <ul>
+        <li>
+          <h4>PhP</h4>
+        </li>
+        <li>
+          <h4>ASP.net</h4>
+        </li>
+        <li>Java</li>
+        <li>
+          <h4>Jquery</h4>
+        </li>
+        <li>
+          <h1>Wordpress</h1>
+        </li>
+        <li>
+          <h1>Protoyping</h1>
+        </li>
+        <li>Json</li>
+        <li>
+          <h1>Wireframing</h1>
+        </li>
+        <li>
+          <h4>AngularJS</h4>
+        </li>
+        <li>
+          <h1>Adobe Creative Suite</h1>
+        </li>
+      </ul>
+    </div>
+    <div id="tools" class="tools cib_contacts col-md-6">
+      <h1 >Which tools do I use?</h1>
+      <ul>
+        <li>
+          <h1>Adobe Photoshop</h1>
+        </li>
+        <li>
+          <h4>Adobe Experience</h4>
+        </li>
+        <li>
+          <h4>Adobe Illustrator</h4>
+        </li>
+        <li>
+          <h4>Adobe InDesign</h4>
+        </li>
+        <li>
+          <h4>Adobe Dreamweaver</h4>
+        </li>
+        <li>
+          <h1>InVision</h1>
+        </li>
+        <li>
+          <h3>Balsamiq</h3>
+        </li>
+        <li>
+          <h1>Justinmind</h1>
+        </li>
+      </ul>
+    </div>
+    <div class="contacts cib_contacts col-md-12">
+      <h1 id="contacts">Let's get in touch!</h1>
+      <h1 style="font-weight: 700">Hmm.. Contact me :)</h1>
+      <h2><img src="IMG/email.jpg"/ width="90">Email: tag.mofokeng@yahoo.com</h2>
+      <h2><img src="IMG/phone.jpg"/ width="90">Mobile: (+27) 78 488 5982</h2>
+    </div>
+  </div>
+</div>
+</div>
+<a href="#top">
+<div id="back_top">Back to top</div>
+</a> 
+<script>
+	
+	$(document).ready(function(){
+    $("#showskill").click(function(){
+        $(".skill").toggle(500);
+    });
+});
+	
+$(document).ready(function(){
+	
+	
+	$(".play").animate({opacity: '0.1'});
+	$(".diss2").hide();
+	$(".diss").show();
+	$(".skill").removeClass("animated");
+	
+	function setHalfVolume() {
+    var myAudio = document.getElementById("audio1");  
+    myAudio.volume = 0.5; //Changed this to 0.5 or 50% volume since the function is called Set Half Volume ;)
+}
+	
+function myFunction() {
+    setTimeout(function(){ alert("Hello"); }, 3000);
+}
+	
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+        	$("#overlay ").hide();
+	 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		   $(".menu ").slideUp();
+    
+}
+else {
+   $(".menu ").show();
+}
+	  
+	  
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;		  
+		
+      });
+    } // End if
+		
+  });
+	
+});
+</script> 
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("back_top").style.display = "block";
+		
+		  $("#welcome").slideUp();
+		$(".skill").show();
+		$(".skill").addClass('animated bounceOutLeft');
+	
+	
+    } else {
+        document.getElementById("back_top").style.display = "none";
+		$("#welcome").slideDown();
+		$(".skill").hide();
+		
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+	
+ $(".mobi_menu").click(function(){
+        $(".menu").slideToggle(500);
+	  $("#overlay ").toggle();
+	
+	 
+	 
+    });	
+</script>
+</body>
+</html>
